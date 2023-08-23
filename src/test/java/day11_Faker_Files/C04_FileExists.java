@@ -28,14 +28,14 @@ public class C04_FileExists extends TestBase {
 
         //Dosyanın başarıyla indirilip indirilmediğini test edelim
         //"C:\Users\Lenovo\Downloads\b10 all test cases, code (4).docx"
-        String dosyaYolu = "C:\\Users\\Lenovo\\Downloads\\b10 all test cases, code (4).docx";
+        String dosyaYolu = "C:\\Users\\Admin\\Downloads\\b10 all test cases, code.docx";
         Assert.assertTrue(Files.exists(Paths.get(dosyaYolu)));
     }
 
     @Test
     public void test02() {
-        //"C:\Users\Lenovo      \Downloads\b10 all test cases, code (4).docx"
-        String farkliYol = System.getProperty("user.home");//-->C:\Users\Lenovo
+        //"C:\Users\Admin   \Downloads\b10 all test cases, code.docx"
+        String farkliYol = System.getProperty("user.home");//-->C:\Users\Admin
         String ortakYol ="\\Downloads\\b10 all test cases, code (4).docx";
         String dosyaYolu = farkliYol+ortakYol;
         Assert.assertTrue(Files.exists(Paths.get(dosyaYolu)));
