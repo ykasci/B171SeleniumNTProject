@@ -18,7 +18,7 @@ public class C02_ExplicitWait_WebDriverWait extends TestBase {
             IMPLICITLY WAIT --> Driver'i oluşturtuktan sonra sayfadaki tüm webelementlerin etkileşime girebilmesi için
         belirtmiş olduğumuz max. süre kadar driver'i bekletir(Duration.ofSecond(15))
 
-            EXPLICT WAIT/WebDriverWait --> Bir webelementin sayfa yüklendikten sonra etkileşime girebilmesi için
+            EXPLICIT WAIT/WebDriverWait --> Bir webelementin sayfa yüklendikten sonra etkileşime girebilmesi için
         max. belirtmiş olduğumuz süre kadar default olarak yarım saniyelik araliklar ile bekler. Örneğin bir
         webelemente tıkladıktan son çıkan bir webelement yada bir alert'ün çıkması testimizi her çalıştırdığımızda
         farklı sürelerde oluşabilir. Dolayısıyla bunu süreyi kestiremediğimizden dolayı Thread.Sleep ile yapmamız
@@ -26,8 +26,8 @@ public class C02_ExplicitWait_WebDriverWait extends TestBase {
         bekletmek daha profesyonelce ve daha dinamik olur. Bunun için WebDriverWait class'ından bir obje oluşturup
         parametre olarak driver'i ve max. süreyi belirtiriz.
 
-            EXPLICT WAIT/FluentWait --> Bir webelementin sayfa yüklendikten sonra etkileşime girebilmesi için max.
-        belirtmiş olduğumuz süre kadar bizim belirttiğimiz aralıklarda bekler
+            EXPLICIT WAIT/FluentWait --> Bir webelementin sayfa yüklendikten sonra etkileşime girebilmesi için max.
+        belirtmiş olduğumuz süre kadar bizim belirttiğimiz ARALIKLARDA bekler
          */
 
         //https://the-internet.herokuapp.com/dynamic_loading/1
